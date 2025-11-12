@@ -1,0 +1,1 @@
+export default function Home(){return <div style={{padding:20}}><h1>MOTA FITNESS</h1><p>Projeto pronto para deploy.</p></div>}
