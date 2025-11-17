@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='pt-BR'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>MOTA FITNESS</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <header>
+        <img src='assets/logo.png' alt='MOTA FITNESS' class='logo'>
+        <nav>
+            <ul>
+                <li><a href='#produtos'>Produtos</a></li>
+                <li><a href='dicas.html'>Dicas Fitness</a></li>
+                <li><a href='#login'>Login</a></li>
+                <li><a href='#carrinho'>Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id='banner'>
+        <img src='assets/logo.png' alt='Banner MOTA FITNESS' class='banner-img'>
+    </section>
+
+    <section id='produtos'>
+        <h2>Catálogo</h2>
+        <select id='categoriaFiltro'>
+            <option value='todos'>Todos</option>
+            <option value='calcas'>Calças</option>
+            <option value='tops'>Tops</option>
+            <option value='camisetas'>Camisetas</option>
+            <option value='macaquinhos'>Macaquinhos</option>
+            <option value='conjuntos'>Conjuntos</option>
+            <option value='bermudas'>Bermudas</option>
+            <option value='meias'>Meias</option>
+        </select>
+        <select id='precoFiltro'>
+            <option value='todos'>Todos os preços</option>
+            <option value='baixo'>Até R$100</option>
+            <option value='alto'>Acima de R$100</option>
+        </select>
+        <div class='grid' id='listaProdutos'></div>
+    </section>
+
+    <section id='login'>
+        <h2>Login/Cadastro</h2>
+        <form id='loginForm'>
+            <input type='text' id='email' placeholder='Email'>
+            <input type='password' id='senha' placeholder='Senha'>
+            <button type='submit'>Entrar</button>
+        </form>
+        <button id='cadastroBtn'>Cadastrar</button>
+    </section>
+
+    <section id='carrinho'>
+        <h2>Carrinho</h2>
+        <div id='itensCarrinho'></div>
+        <button id='checkoutBtn'>Finalizar Compra (Pix)</button>
+    </section>
+
+    <script src='script.js'></script>
+</body>
+</html>
